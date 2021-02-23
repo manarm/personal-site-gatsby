@@ -12,9 +12,17 @@ html {
     background-color: var(--light-grey);
 }
 
+/* TODO responsive */
 .container {
-    margin: 1rem auto;
+    margin: auto;
     max-width: 800px;
+    min-width: 600px;
+}
+
+.nav-banner {
+  background-color: var(--light);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -22,18 +30,27 @@ html {
     align-items: center;
 
   a {
+    color: var(--dark);
     text-decoration: none;
   }
 
   ul {
+    list-style-type: none;
     padding-left: 0;
+    margin: 0;
 
     li {
       display:inline;
-      margin-left: 2rem;
+      margin: 0 0 0 2rem;
     }
   }
   .nav-icons {
     margin-left: auto;
   }
+}
+
+.footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: solid 1px;
 }

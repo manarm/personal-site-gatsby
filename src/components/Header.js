@@ -3,7 +3,9 @@ import {Link} from "gatsby";
 
 export default function Header() {
   return (
-    <div className="navbar">
+<div className="nav-banner">
+  <div className="container">
+    <div className="navbar">  
       <span class="brand"><Link to="/">Mitchell Manar</Link></span>
       <ul>
         <li><Link to="/">home</Link></li>
@@ -12,5 +14,7 @@ export default function Header() {
       </ul>
       <div className="nav-icons">icons here</div>
     </div>
+  </div>
+</div>
   )
 }
