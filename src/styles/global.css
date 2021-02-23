@@ -1,0 +1,18 @@
+/* Coolors Exported Palette - https://coolors.co/d8dbe2-a9bcd0-58a4b0-373f51-1b1b1e */
+:root {
+    --light: #d8dbe2ff;
+    --light-grey: #a9bcd0ff;
+    --light-blue: #58a4b0ff;
+    --grey: #373f51ff;
+    --dark: #1b1b1eff;
+}
+
+html {
+    color: var(--dark);
+    background-color: var(--light-grey);
+}
+
+.container {
+    margin: 5rem auto;
+    max-width: 800px;
+}
