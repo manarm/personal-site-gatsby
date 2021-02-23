@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-export default function Layout({children}) {
-    return <div className='container'> 
-        <p>header here</p>
-        {children}
-        <p>footer here</p>
+export default function Layout({ children }) {
+  return (
+    <div className="container">
+      <Header />
+      {children}
+      <Footer />
     </div>
+  )
 }

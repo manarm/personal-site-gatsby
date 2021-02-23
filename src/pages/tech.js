@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/Layout"
 
-export default function Home() {
+export default function Tech() {
   return (
     <Layout>
-      <div>Hello world!</div>
+      <div>Tech blog forthcoming.</div>
     </Layout>
   )
 }

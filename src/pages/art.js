@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/Layout"
 
-export default function Home() {
+export default function Art() {
   return (
     <Layout>
-      <div>Hello world!</div>
+      <div>Art blog forthcoming.</div>
     </Layout>
   )
 }

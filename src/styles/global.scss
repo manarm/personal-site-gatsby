@@ -13,6 +13,27 @@ html {
 }
 
 .container {
-    margin: 5rem auto;
+    margin: 1rem auto;
     max-width: 800px;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      display:inline;
+      margin-left: 2rem;
+    }
+  }
+  .nav-icons {
+    margin-left: auto;
+  }
 }
