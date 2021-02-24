@@ -22,20 +22,19 @@ html {
     background-color: var(--light-grey);
 }
 
-/* TODO responsive */
-.container {
-    margin: auto;
-    max-width: 800px;
-}
-
 a {
   color: var(--grey);
+}
+
+.main-body {
+  padding-top: 1rem;
+  background-color: var(--light-grey);
 }
 
 .nav-banner {
   background-color: var(--light);
   padding: 1rem 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .navbar {
