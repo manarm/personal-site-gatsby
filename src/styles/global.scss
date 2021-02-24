@@ -7,6 +7,10 @@
     --dark: #1b1b1eff;
 }
 
+body {
+  font-family: "Source Serif Pro";
+}
+
 html {
     color: var(--dark);
     background-color: var(--light-grey);
@@ -41,12 +45,38 @@ html {
 
     li {
       display:inline;
-      margin: 0 0 0 2rem;
+      border-left: solid 1px;
+      border-right: solid 1px;
+      padding: 1rem;
+      margin-left: 1rem;
+
+      &:hover {
+        background: var(--light-blue);
+      }
     }
   }
   .nav-icons {
     margin-left: auto;
   }
+  a .icon {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-grey);
+
+    &:hover {
+      color: var(--light-blue)
+    }
+
+  }
+}
+
+.headshot {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.about-card {
+  display:flex;
+  align-items: center;
 }
 
 .footer {
