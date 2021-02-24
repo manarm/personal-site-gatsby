@@ -10,9 +10,10 @@ export default function Header() {
     <div className="navbar">  
       <span class="brand"><Link to="/">mitchell m</Link></span>
       <ul>
-        <li><Link to="/">home</Link></li>
-        <li><Link to="/tech">tech</Link></li>
-        <li><Link to="/art">art</Link></li>
+        <Link to="/"><li>home</li></Link>
+        <Link to="/tech"><li>tech</li></Link>
+        <Link to="/art"><li>art</li></Link>
+        <Link to="/contact"><li>contact</li></Link>
       </ul>
       <div className="nav-icons">
         <a href="https://github.com/manarm" target="_blank" rel="noopener noreferrer" >

@@ -7,7 +7,16 @@ export default function Home() {
     <Layout>
       <div className="about-card">
         <img className="headshot" height="200px" width="200px" src={headshot} alt="portrait of mitchell" />
-        Hello world!
+        <div>
+          <p><strong>Mitchell</strong> (he/him/his) is a fullstack developer and performing artist based in Chicago, IL. Check out some recent projects, or get in touch.</p>
+          <p><strong>keywords:</strong></p>
+          <p>
+            tech: fullstack &mdash; react &mdash; node &mdash; c++ &mdash; systems
+          </p>
+          <p>
+            art: community &mdash; devised &mdash; movement &mdash; access &mdash; joy
+          </p>
+        </div>
       </div>
     </Layout>
   )
