@@ -26,7 +26,10 @@ html {
 .container {
     margin: auto;
     max-width: 800px;
-    min-width: 600px;
+}
+
+a {
+  color: var(--grey);
 }
 
 .nav-banner {
@@ -42,6 +45,9 @@ html {
   a {
     color: var(--dark);
     text-decoration: none;
+  }
+  a.nav-active {
+    font-weight: bold;
   }
 
   ul {
@@ -92,5 +98,12 @@ html {
 
   strong {
     font-size: 1.3rem;
+  }
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 0.5rem;
   }
 }
