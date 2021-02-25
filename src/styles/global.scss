@@ -24,6 +24,7 @@ html {
 
 a {
   color: var(--grey);
+  text-decoration: underline;
 }
 
 .main-body {
@@ -40,7 +41,7 @@ button {
   color: var(--dark);
   border: solid 2px;
   border-radius: 8px;
-  &:hover {
+  &:hover, &:focus {
     background-color: var(--light-blue)
   }
 }
@@ -52,13 +53,16 @@ button {
 }
 
 .navbar {
-  a:hover {
-    color: var(--dark);
+  a {
+    text-decoration: none;  
+    &:hover {
+      color: var(--dark);
+    }
   }
 }
 
 .gatsby-link {
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
     text-shadow: 1px 0px 0px var(--dark);
     color: var(--dark);
@@ -82,7 +86,7 @@ button {
     font-size: 1.5rem;
     color: var(--light-grey);
   
-    &:hover {
+    &:hover, &:focus {
       color: var(--light-blue)
     }
   }
@@ -95,10 +99,18 @@ button {
 
   a {
     text-decoration: underline;
-    &:hover {
+    &:hover, &:focus {
       color: var(--dark);
     }
   }
+}
+
+#poem {
+  white-space: pre-wrap;
+  font-size: 0.8em;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid;
 }
 
 .headshot {

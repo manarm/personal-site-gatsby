@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 export default function Layout({ children }) {
   return (<>
   <Header />
-  <div className="main-body">
+  <div id="main-content" className="main-body">
     <div className="container">
       {children}
       <Footer />
