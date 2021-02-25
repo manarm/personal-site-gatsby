@@ -13,7 +13,7 @@ export default function Header() {
   <div className="container">
     <Navbar className="justify-content-start" expand="md"> 
     <Navbar.Toggle className="mr-3" aria-controls="basic-navbar-nav" />
-    <Navbar.Brand><Link to="/">mitchell m</Link></Navbar.Brand>
+    <Navbar.Brand>mitchell m</Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav.Link><Link className="gatsby-link" activeClassName="nav-active" to="/">home</Link></Nav.Link>
       <Nav.Link><Link className="gatsby-link" activeClassName="nav-active" to="/tech">tech</Link></Nav.Link>
