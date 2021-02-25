@@ -8,6 +8,8 @@ import { faTwitter, faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-s
 export default function Header() {
   return (
 <div className="nav-banner">
+  <a class="skip-to-content-link" href="#main-content">Skip to Content.</a>
+
   <div className="container">
     <Navbar className="justify-content-start" expand="md"> 
     <Navbar.Toggle className="mr-3" aria-controls="basic-navbar-nav" />

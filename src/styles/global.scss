@@ -46,6 +46,21 @@ button {
   }
 }
 
+.skip-to-content-link {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+
+  &:focus {
+    background-color: var(--dark);
+    color: var(--light);
+    left: 0;
+    top: 0;
+    padding: 3px;
+  }
+}
+
 .nav-banner {
   background-color: var(--light);
   padding: 1rem 0;
