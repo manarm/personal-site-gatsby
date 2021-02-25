@@ -9,14 +9,14 @@ export default function Header() {
   return (
 <div className="nav-banner">
   <div className="container">
-    <Navbar className="justify-content-start" expand="lg"> 
+    <Navbar className="justify-content-start" expand="md"> 
     <Navbar.Toggle className="mr-3" aria-controls="basic-navbar-nav" />
     <Navbar.Brand><Link to="/">mitchell m</Link></Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav.Link><Link activeClassName="nav-active" to="/">home</Link></Nav.Link>
-      <Nav.Link><Link activeClassName="nav-active" to="/tech">tech</Link></Nav.Link>
-      <Nav.Link><Link activeClassName="nav-active" to="/art">art</Link></Nav.Link>
-      <Nav.Link><Link activeClassName="nav-active" to="/contact">contact</Link></Nav.Link>
+      <Nav.Link><Link className="gatsby-link" activeClassName="nav-active" to="/">home</Link></Nav.Link>
+      <Nav.Link><Link className="gatsby-link" activeClassName="nav-active" to="/tech">tech</Link></Nav.Link>
+      <Nav.Link><Link className="gatsby-link" activeClassName="nav-active" to="/art">art</Link></Nav.Link>
+      <Nav.Link><Link className="gatsby-link" activeClassName="nav-active" to="/contact">contact</Link></Nav.Link>
       <div className="nav-icons d-none d-md-inline">
         <a href="https://github.com/manarm" target="_blank" rel="noopener noreferrer" >
           <FontAwesomeIcon className="icon" icon={faGithubAlt} />

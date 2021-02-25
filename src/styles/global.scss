@@ -41,19 +41,27 @@ a {
   margin-bottom: 0;
 }
 
+.navbar {
+  a:hover {
+    color: var(--dark);
+  }
+}
+
+.gatsby-link {
+  &:hover {
+    text-decoration: none;
+    text-shadow: 1px 0px 0px var(--dark);
+    color: var(--dark);
+  }
+}
+
+.nav-active {
+  text-shadow: 1px 0px 0px var(--dark);
+}
+
 .nav-link {
   color: var(--dark);
   border-left: solid 1px;
-
-  &:hover {
-    text-decoration: none;
-    background: var(--light-blue);
-  }
-
-  a:hover {
-    text-decoration: none;
-    color: var(--dark);
-  }
 }
 
 .nav-icons {
