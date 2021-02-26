@@ -5,7 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [`gatsby-plugin-sass`],
+  pathPrefix: "/personal-site-gatsby",
+  plugins: [`gatsby-plugin-sass`,
+  `gatsby-plugin-fontawesome-css`,
+],
   
 }

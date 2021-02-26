@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "gatsby";
-import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -15,10 +14,10 @@ export default function Header() {
     <Navbar.Toggle className="mr-3" aria-controls="basic-navbar-nav" />
     <Navbar.Brand>mitchell m</Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav.Link tabindex="-1"><Link className="gatsby-link" activeClassName="nav-active" to="/">home</Link></Nav.Link>
-      <Nav.Link tabindex="-1"><Link className="gatsby-link" activeClassName="nav-active" to="/tech">tech</Link></Nav.Link>
-      <Nav.Link tabindex="-1"><Link className="gatsby-link" activeClassName="nav-active" to="/art">art</Link></Nav.Link>
-      <Nav.Link tabindex="-1"><Link className="gatsby-link" activeClassName="nav-active" to="/contact">contact</Link></Nav.Link>
+      <Link className="nav-link" activeClassName="nav-active" to="/">home</Link>
+      <Link className="nav-link" activeClassName="nav-active" to="/tech">tech</Link>
+      <Link className="nav-link" activeClassName="nav-active" to="/art">art</Link>
+      <Link className="nav-link" activeClassName="nav-active" to="/contact">contact</Link>
       <div className="nav-icons d-none d-md-inline">
         <a href="https://github.com/manarm" target="_blank" rel="noopener noreferrer" >
           <FontAwesomeIcon className="icon" icon={faGithubAlt} />

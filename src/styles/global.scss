@@ -77,11 +77,7 @@ button {
 }
 
 .gatsby-link {
-  &:hover, &:focus {
-    text-decoration: none;
-    text-shadow: 1px 0px 0px var(--dark);
-    color: var(--dark);
-  }
+
 }
 
 .nav-active {
@@ -91,6 +87,12 @@ button {
 .nav-link {
   color: var(--dark);
   border-left: solid 1px;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    text-shadow: 1px 0px 0px var(--dark);
+    color: var(--dark);
+  }
 }
 
 .nav-icons {
