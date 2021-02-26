@@ -18,7 +18,8 @@ export default function Header() {
       <Link className="nav-link" activeClassName="nav-active" to="/tech">tech</Link>
       <Link className="nav-link" activeClassName="nav-active" to="/art">art</Link>
       <Link className="nav-link" activeClassName="nav-active" to="/contact">contact</Link>
-      <div className="nav-icons d-none d-md-inline">
+    </Navbar.Collapse>
+    <div className="nav-icons">
         <a href="https://github.com/manarm" target="_blank" rel="noopener noreferrer" >
           <FontAwesomeIcon className="icon" icon={faGithubAlt} />
         </a>
@@ -29,7 +30,6 @@ export default function Header() {
           <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
         </a>
       </div>
-    </Navbar.Collapse>
     </Navbar>
   </div>
 </div>
