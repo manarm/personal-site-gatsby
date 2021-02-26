@@ -1,13 +1,11 @@
 import React from "react";
 import {Link} from 'gatsby';
 import Layout from "../components/Layout";
-import SEO from "../components/seo"
 import headshot from './headshot.jpg';
 
 export default function Home() {
   return (
     <Layout>
-      <SEO />
       <div className="about-card flex-wrap flex-md-nowrap justify-content-center">
         <img className="headshot mb-2" height="200px" width="200px" src={headshot} alt="portrait of mitchell" />
         <div>
