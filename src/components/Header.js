@@ -10,7 +10,7 @@ export default function Header() {
   <a class="skip-to-content-link" href="#main-content">Skip to Content.</a>
 
   <div className="container">
-    <Navbar className="justify-content-start" expand="md"> 
+    <Navbar expand="md"> 
     <Navbar.Toggle className="mr-3" aria-controls="basic-navbar-nav" />
     <Navbar.Brand>mitchell m</Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
@@ -20,16 +20,16 @@ export default function Header() {
       <Link className="nav-link" activeClassName="nav-active" to="/contact">contact</Link>
     </Navbar.Collapse>
     <div className="nav-icons">
-        <a href="https://github.com/manarm" target="_blank" rel="noopener noreferrer" >
-          <FontAwesomeIcon className="icon" icon={faGithubAlt} />
-        </a>
-        <a href="https://twitter.com/itsmatchell" target="_blank" rel="noopener noreferrer" >
-          <FontAwesomeIcon className="icon" icon={faTwitter} />
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
-        </a>
-      </div>
+      <a href="https://github.com/manarm" target="_blank" rel="noopener noreferrer" >
+        <FontAwesomeIcon className="icon" icon={faGithubAlt} />
+      </a>
+      <a href="https://twitter.com/itsmatchell" target="_blank" rel="noopener noreferrer" >
+        <FontAwesomeIcon className="icon" icon={faTwitter} />
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+      </a>
+    </div>
     </Navbar>
   </div>
 </div>

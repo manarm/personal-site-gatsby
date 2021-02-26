@@ -1,14 +1,10 @@
 import React, {useState, useEffect} from "react"
 
 export default function Footer() {
-  const [poem, setPoem] = useState('');
+  const [poem, setPoem] = useState('The poem you seek\nCannot be located, but\nCountless more exist.');
   const [displayPoem, setDisplayPoem] = useState(false);
 
   useEffect(() => {
-    const errPoem = `The poem you seek
-    Cannot be located, but
-    Countless more exist.`;
-
     fetch('https://poetrydb.org/random')
     .then(response => response.json())
     .then(data => {
@@ -21,13 +17,10 @@ export default function Footer() {
           ...poemObj.lines
         ]
         setPoem(poemLines.join('\n'));
-      } else {
-        setPoem(errPoem);
       }
     })
     .catch(error => {
       console.log(error);
-      setPoem(errPoem);
     });
   }, [])
 

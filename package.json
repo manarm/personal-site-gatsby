@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "manarm-gatsby",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "homepage for mitchell m",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -27,9 +27,7 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.5.0",
     "react-dom": "^16.12.0",
-    "react-typography": "^0.16.19",
-    "sass": "^1.32.8",
-    "source-serif-pro": "^3.1.0"
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
@@ -37,9 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/manarm/personal-site-gatsby"
   }
 }
