@@ -1,5 +1,5 @@
 import React from "react"
-import {graphql} from "gatsby"
+import {graphql, Link} from "gatsby"
 
 import Layout from "../components/Layout"
 
@@ -12,7 +12,7 @@ export default function Tech({data}) {
         return (
         <div className="blog-card">
         <div>
-          <h2 className="mr-2">{node.frontmatter.title}</h2>
+          <h2 className="mr-2"><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h2>
           <div className="post-meta d-block d-md-inline">
             ({postdate.toDateString()})
             [
@@ -21,7 +21,10 @@ export default function Tech({data}) {
             ]
           </div>
         </div>
-        <p>{node.excerpt}</p>
+        <p>
+          {node.excerpt}
+          <span className='ml-1'><Link to={node.fields.slug}>(continued)</Link></span>
+        </p>
         </div>
       )})}
     </Layout>
@@ -40,6 +43,9 @@ export const query = graphql`
             date
             url
             github
+          }
+          fields {
+            slug
           }
         }
       }
