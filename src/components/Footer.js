@@ -5,6 +5,7 @@ export default function Footer() {
   const [displayPoem, setDisplayPoem] = useState(false);
 
   useEffect(() => {
+    let isMounted = true;
     fetch('https://poetrydb.org/random')
     .then(response => response.json())
     .then(data => {
@@ -16,12 +17,15 @@ export default function Footer() {
           ' ',
           ...poemObj.lines
         ]
-        setPoem(poemLines.join('\n'));
+        if(isMounted) {
+          setPoem(poemLines.join('\n'));
+        }
       }
     })
     .catch(error => {
       console.log(error);
     });
+    return(()=>{ isMounted = false });
   }, [])
 
 

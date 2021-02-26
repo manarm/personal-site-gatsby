@@ -10,7 +10,7 @@ export default function Tech({data}) {
       {data.allMarkdownRemark.edges.map(({node}) => {
         const postdate = new Date(node.frontmatter.date);
         return (
-        <div className="blog-card">
+        <div className="blog-card" key={node.id}>
         <div>
           <h2 className="mr-2"><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h2>
           <div className="post-meta d-block d-md-inline">
