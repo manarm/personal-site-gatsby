@@ -10,8 +10,16 @@ export default function Tech({data}) {
  
       {data.allMarkdownRemark.edges.map(({node}) => (
         <div className="blog-card">
-        <h2>{node.frontmatter.title}</h2>
-        <span>{node.excerpt}</span>
+        <div>
+          <h2>{node.frontmatter.title}</h2>
+          <span className="post-meta">
+            [
+            <a href={node.frontmatter.url} target="_blank" rel="noopener noreferrer" >project</a>&mdash;
+            <a href={node.frontmatter.github} target="_blank" rel="noopener noreferrer" >github</a>
+            ]
+          </span>
+        </div>
+        <p>{node.excerpt}</p>
         </div>
       ))}
     </Layout>
@@ -24,7 +32,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt
+          excerpt(pruneLength: 400)
           frontmatter {
             title
             url

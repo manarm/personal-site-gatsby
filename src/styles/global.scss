@@ -105,6 +105,23 @@ button {
   }
 }
 
+.blog-card {
+  padding-top: 0.5em;
+  border-top: 1px solid var(--dark);
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: inline;
+  }
+
+  .post-meta {
+    margin-left: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
 .footer {
   margin-top: 1rem;
   padding-top: 1rem;
