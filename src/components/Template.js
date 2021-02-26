@@ -1,7 +1,7 @@
 import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
-
+g
 export default function Template({ data }) {
   const post = data.markdownRemark;
   const postdate = new Date(post.frontmatter.date);
