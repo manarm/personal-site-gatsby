@@ -7,7 +7,7 @@ import { faTwitter, faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-s
 export default function Header() {
   return (
 <div className="nav-banner">
-  <a class="skip-to-content-link" href="#main-content">Skip to Content.</a>
+  <a className="skip-to-content-link" href="#main-content">Skip to Content.</a>
 
   <div className="container">
     <Navbar expand="md"> 

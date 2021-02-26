@@ -26,7 +26,7 @@ export default function Footer() {
 
 
   return <div className='footer d-flex flex-wrap flex-md-nowrap align-items-start justify-content-between'>
-    <span class="order-1">Mitchell Manar &copy; 2021</span>
+    <span className="order-1">Mitchell Manar &copy; 2021</span>
     <div id="poem" className="order-3 order-md-2">{displayPoem && poem}</div>
     <button className="order-2 order-md-3" onClick={() => {setDisplayPoem(!displayPoem)}}>Time for a poem?</button>
   </div>

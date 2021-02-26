@@ -1,12 +1,36 @@
 import React from "react"
+import {graphql} from "gatsby"
 
 import Layout from "../components/Layout"
 
-export default function Tech() {
+export default function Tech({data}) {
   return (
     <Layout>
-      <p>Tech blog forthcoming.</p>
-      <p><strong>While you wait</strong>: this <a href="https://jamstack.org/what-is-jamstack/" target="_blank" rel="noreferrer">Jamstack</a> site (the one you are reading) is my most recent project!</p>
+      <h1>Recent Projects</h1>
+ 
+      {data.allMarkdownRemark.edges.map(({node}) => (
+        <div className="blog-card">
+        <h2>{node.frontmatter.title}</h2>
+        <span>{node.excerpt}</span>
+        </div>
+      ))}
     </Layout>
   )
 }
+
+export const query = graphql`
+  query TechPosts {
+    allMarkdownRemark(filter: {frontmatter: {category: {eq: "tech"}}}) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+            url
+            github
+          }
+        }
+      }
+    }
+  }`
