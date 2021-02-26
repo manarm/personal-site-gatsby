@@ -1,12 +1,14 @@
 import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
+import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const post = data.markdownRemark;
   const postdate = new Date(post.frontmatter.date);
   return (
     <Layout>
+      <SEO title={post.frontmatter.title} description={post.excerpt} />
       <div className="blog-header">
         <h1 className="mr-2">{post.frontmatter.title}</h1>
         <div className="post-meta d-block d-md-inline">
@@ -32,6 +34,7 @@ query($slug: String!) {
       url
       github
     }
+    excerpt
   }
 }
 `
