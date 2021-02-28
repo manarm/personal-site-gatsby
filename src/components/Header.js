@@ -26,7 +26,7 @@ export default function Header() {
       <a href="https://twitter.com/itsmatchell" target="_blank" rel="noopener noreferrer" >
         <FontAwesomeIcon className="icon" icon={faTwitter} />
       </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/mitchell-manar-9a3a0b207/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
       </a>
     </div>
