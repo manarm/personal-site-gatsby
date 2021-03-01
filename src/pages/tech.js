@@ -33,7 +33,7 @@ export default function Tech({data}) {
 
 export const query = graphql`
   query TechPosts {
-    allMarkdownRemark(filter: {frontmatter: {category: {eq: "tech"}}}) {
+    allMarkdownRemark {
       edges {
         node {
           id

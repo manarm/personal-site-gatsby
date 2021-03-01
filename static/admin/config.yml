@@ -16,3 +16,11 @@ collections:
       - { name: url }
       - { name: github }
       - { name: body, label: Body, widget: markdown } 
+  - name: art
+    label: art
+    folder: art
+    create: true
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown } 
