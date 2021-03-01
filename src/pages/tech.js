@@ -32,22 +32,24 @@ export default function Tech({data}) {
 }
 
 export const query = graphql`
-  query TechPosts {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 400)
-          frontmatter {
-            title
-            date
-            url
-            github
-          }
-          fields {
-            slug
-          }
+query TechPosts {
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/tech/"}}) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 400)
+        fields {
+          slug
+        }
+        fileAbsolutePath
+        frontmatter {
+          date
+          github
+          url
+          title
         }
       }
     }
-  }`
+  }
+}
+`
