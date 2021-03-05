@@ -33,7 +33,10 @@ export default function Tech({data}) {
 
 export const query = graphql`
 query TechPosts {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/tech/"}}) {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/tech/"}}
+    sort: { fields: [frontmatter___date], order: DESC }
+    ) {
     edges {
       node {
         id
